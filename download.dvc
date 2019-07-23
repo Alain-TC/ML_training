@@ -1,0 +1,19 @@
+md5: 00725ec18b8b964d599a00b182937f5e
+cmd: kaggle competitions download -c digit-recognizer -p data/
+wdir: .
+outs:
+- cache: true
+  md5: 41c211720c7bcc4fcf21457ca237ac24
+  path: data/sample_submission.csv
+  metric: false
+  persist: false
+- cache: true
+  md5: a35759d77c0a3dadb4d4253ff87ec430
+  path: data/test.csv
+  metric: false
+  persist: false
+- cache: true
+  md5: f3eaeafb90cde88b238ebc8dfd4501c5
+  path: data/train.csv
+  metric: false
+  persist: false
