@@ -1,0 +1,17 @@
+wdir: .
+deps:
+- md5: f3eaeafb90cde88b238ebc8dfd4501c5
+  path: data/train.csv
+outs:
+- cache: true
+  metric: false
+  persist: false
+  md5: d141906cf9e9dd44c62ecfafbcdc43ce
+  path: data/learning_train.csv
+- cache: true
+  metric: false
+  persist: false
+  md5: 7a4d4b62f3f74f5ddcb868d29a7a17d4
+  path: data/learning_test.csv
+md5: 22fbea336c3aa0eb4c20f3fbfe8658c8
+cmd: python data/split_train.py
