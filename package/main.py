@@ -31,15 +31,11 @@ if __name__ == '__main__':
 
     clf.fit(features_train, target_train)
 
-    df_test = pd.read_csv('/Users/Alain/GitHub/MNIST_kaggle/data/learning_test.csv')
+
+    df_test = pd.read_csv("{}/data/learning_test.csv".format(main_path))
 
     target_test = df_test[['label']]
     features_test = df_test.drop('label', axis=1, inplace=False)
-
-
-
-
-    df_test = pd.read_csv("{}/data/learning_test.csv".format(main_path))
 
     target_test_prediction = clf.predict(features_test)
     target_test_prediction_df = pd.DataFrame(target_test_prediction, columns=["label"])

@@ -1,0 +1,16 @@
+cmd: python package/main.py
+wdir: .
+deps:
+- md5: 8edfe7f09978bdb9fa9ad01b94a53ec3.dir
+  path: package
+- md5: 7a4d4b62f3f74f5ddcb868d29a7a17d4
+  path: data/learning_test.csv
+- md5: d141906cf9e9dd44c62ecfafbcdc43ce
+  path: data/learning_train.csv
+md5: 5f9063d6618f5ad490b07801368448f2
+outs:
+- metric: false
+  persist: false
+  cache: true
+  md5: 1601d6ed1a18ea88779eeb281b3a5766
+  path: data/target_test_prediction_df.csv
