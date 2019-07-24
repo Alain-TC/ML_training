@@ -4,3 +4,4 @@
 */__pycache__/
 *.pyc
 *.idea/workspace.xml
+*.ipynb_checkpoints/

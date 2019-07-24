@@ -3,4 +3,4 @@ import sklearn
 
 
 def pipe_feature_engineering(steps):
-    return sklearn.pipeline.Pipeline(steps)
+    return make_pipeline(steps)
