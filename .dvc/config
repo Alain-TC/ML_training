@@ -1,0 +1,4 @@
+['remote "upstream"']
+url = gs://dvc_test/MNIST
+[core]
+remote = upstream

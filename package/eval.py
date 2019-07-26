@@ -30,7 +30,7 @@ if __name__ == '__main__':
     preprocessing_pipe.fit(features_test, target_test)
     X_test = preprocessing_pipe.transform(features_test)
 
-    filename = "{}/model/finalized_model.csv".format(main_path)
+    filename = "{}/model/finalized_model.sav".format(main_path)
     # load the model from disk
     loaded_model = pickle.load(open(filename, 'rb'))
     y_pred = loaded_model.predict(X_test)
