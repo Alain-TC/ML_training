@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.metrics import classification_report, confusion_matrix
 
 
 def mean_percentage_error(y_true, y_pred):
@@ -24,3 +25,15 @@ def mean_absolute_error(y_true, y_pred):
 def prediction_correlation(y_true, y_pred):
     return np.corrcoef(y_true, y_pred)[0][1]
 
+
+def evaluate_performance(y_test, y_pred):
+    performance = {}
+    performance['MAPE'] = float(mean_percentage_error(y_test, y_pred))
+    performance['MDAPE'] = float(median_percentage_error(y_test, y_pred))
+    performance['RMSE'] = float(root_mean_squared_error(y_test, y_pred))
+    performance['MAE'] = float(mean_absolute_error(y_test, y_pred))
+    performance['confusion'] = confusion_matrix(y_test, y_pred)
+    performance['TP'] = float(sum(list(x == y for x, y in zip(y_test.values, y_pred.values)))) / len(y_test.values)
+    #performance['classification_report'] = classification_report(y_test, y_pred)
+
+    return performance

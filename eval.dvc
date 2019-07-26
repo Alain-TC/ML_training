@@ -1,16 +1,14 @@
-wdir: .
+md5: 85b6fbd4eb7745d90105618ff571cecf
 outs:
-- path: data/performances.json
-  metric: true
-  cache: true
-  md5: 5e5cca867fe819a4492161d57c075e01
+- md5: 8b0248fe543e051a4c43f546f91c04bd
   persist: false
+  path: data/performances.json
+  cache: true
+  metric: true
 cmd: python package/eval.py
-md5: e1e7f45b2185989fce393a986e2e5aa4
 deps:
-- path: package/eval.py
-  md5: 8d4d93131d3e28d1cd4acc45c0dea12e
-- path: data/target_test_prediction_df.csv
-  md5: 1601d6ed1a18ea88779eeb281b3a5766
-- path: data/learning_test.csv
-  md5: 7a4d4b62f3f74f5ddcb868d29a7a17d4
+- md5: 7a4d4b62f3f74f5ddcb868d29a7a17d4
+  path: data/learning_test.csv
+- md5: 732aad725c117e8e5423172b39d1e2da
+  path: model/finalized_model.sav
+wdir: .
