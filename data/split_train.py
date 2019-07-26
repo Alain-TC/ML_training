@@ -9,5 +9,5 @@ shape = int(train.shape[0] * 0.8)
 learning_train = train.iloc[:shape, :]
 learning_test = train.iloc[shape:, :]
 
-learning_train.to_csv("{}/data/learning_train.csv".format(cwd),index=False)
-learning_test.to_csv("{}/data/learning_test.csv".format(cwd),index=False)
+learning_train.to_csv("{}/data/learning_train.csv".format(cwd), index=False)
+learning_test.to_csv("{}/data/learning_test.csv".format(cwd), index=False)
