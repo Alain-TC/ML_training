@@ -1,11 +1,11 @@
-md5: 1574b6ccf2eea5b9a437966b8e1ce363
+md5: f87be433a3cf109a1a1174f6527ff564
 deps:
 - md5: a35759d77c0a3dadb4d4253ff87ec430
   path: data/test.csv
-- md5: c68018ca07a0c07e2723b94dad43ce16
+- md5: b956e23d5a4c7b8069b18ac8733f868e
   path: model/finalized_model.sav
 outs:
-- md5: bb1676289947e525fc0783d063cef5a0
+- md5: bf6c4016a95c51410ad4b5bb4e048249
   metric: false
   path: data/test_prediction.csv
   persist: false

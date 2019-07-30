@@ -7,3 +7,4 @@
 *.ipynb_checkpoints/
 package/.idea/workspace.xml
 */cache
+**/package/.idea
