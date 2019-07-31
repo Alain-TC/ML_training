@@ -1,0 +1,14 @@
+md5: 1574b6ccf2eea5b9a437966b8e1ce363
+deps:
+- md5: a35759d77c0a3dadb4d4253ff87ec430
+  path: data/test.csv
+- md5: c68018ca07a0c07e2723b94dad43ce16
+  path: model/finalized_model.sav
+outs:
+- md5: bb1676289947e525fc0783d063cef5a0
+  metric: false
+  path: data/test_prediction.csv
+  persist: false
+  cache: true
+cmd: python package/kaggle_prediction.py
+wdir: .

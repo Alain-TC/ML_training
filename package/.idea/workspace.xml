@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/kaggle_prediction.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" column="87" lean-forward="false" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="87" />
+              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -766,7 +766,7 @@
     <entry file="file://$PROJECT_DIR$/kaggle_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="87" lean-forward="false" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="87" />
+          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="42" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
