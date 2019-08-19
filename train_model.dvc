@@ -1,18 +1,18 @@
-md5: 0ab54ae2840c0e95d402da0d76f61e66
+md5: d0bd07051943f4dd95fcd528292d93c3
 outs:
 - path: model/finalized_model.sav
   metric: false
-  md5: b956e23d5a4c7b8069b18ac8733f868e
+  md5: a3a056f87814a21301413b54b5d7c31a
   cache: true
   persist: false
 - path: data/train_performances.json
   metric: false
-  md5: e97fe9e17573443e1ac7e48bf4a6aee7
+  md5: 92e3b58ccb05fbbf21ff3493f13292e6
   cache: true
   persist: false
 deps:
 - path: package
-  md5: 2ae92a407e63bc6b7718ed8ba75da6f9.dir
+  md5: 45f102cda9bf6d5db3e1b19a37d801e5.dir
 - path: data/learning_test.csv
   md5: ab893fa2529c3d3ed73a39edb6ebef2b
 - path: data/learning_train.csv

@@ -1,14 +1,14 @@
-md5: f87be433a3cf109a1a1174f6527ff564
-deps:
-- md5: a35759d77c0a3dadb4d4253ff87ec430
-  path: data/test.csv
-- md5: b956e23d5a4c7b8069b18ac8733f868e
-  path: model/finalized_model.sav
-outs:
-- md5: bf6c4016a95c51410ad4b5bb4e048249
-  metric: false
-  path: data/test_prediction.csv
-  persist: false
-  cache: true
-cmd: python package/kaggle_prediction.py
 wdir: .
+deps:
+- path: data/test.csv
+  md5: a35759d77c0a3dadb4d4253ff87ec430
+- path: model/finalized_model.sav
+  md5: a3a056f87814a21301413b54b5d7c31a
+md5: b544449b566538242d13d7f2d90a96c8
+outs:
+- path: data/test_prediction.csv
+  metric: false
+  cache: true
+  persist: false
+  md5: 1f833f0bdf010051dbfbb68e85812fc7
+cmd: python package/kaggle_prediction.py

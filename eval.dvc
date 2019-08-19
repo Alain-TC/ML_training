@@ -1,14 +1,14 @@
 outs:
 - metric: true
   path: data/performances.json
-  md5: e166ccedf6515f6c3d62d1474c8edd30
+  md5: 4dbd801e22f4c6fa06da9c658176fdde
   cache: true
   persist: false
 deps:
 - path: data/learning_test.csv
   md5: ab893fa2529c3d3ed73a39edb6ebef2b
 - path: model/finalized_model.sav
-  md5: b956e23d5a4c7b8069b18ac8733f868e
+  md5: a3a056f87814a21301413b54b5d7c31a
 cmd: python package/eval.py
 wdir: .
-md5: 37e7aa8981944e0b08105ed1634b3031
+md5: 4984e2c7c9d67641fcb74d49a64895ab
