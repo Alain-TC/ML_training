@@ -5,16 +5,17 @@ FROM python:3.7
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-#COPY . /app
-COPY data/train.csv.dvc /app/data/train.csv.dvc
-COPY eval.dvc /app/eval.dvc
-COPY kaggle_prediction.dvc /app/kaggle_prediction.dvc
-COPY package /app/package
-COPY requirements.txt /app/requirements.txt
-COPY split_train.dvc /app/split_train.dvc
-COPY split_train.dvc /app/split_train.dvc
-COPY .dvc /app/.dvc
-COPY go.sh /app/go.sh
+COPY . /app
+
+#COPY data/ app/data/
+#COPY eval.dvc /app/eval.dvc
+#COPY kaggle_prediction.dvc /app/kaggle_prediction.dvc
+#COPY package /app/package
+#COPY requirements.txt /app/requirements.txt
+#COPY split_train.dvc /app/split_train.dvc
+#COPY train_model.dvc /app/train_model.dvc
+#COPY .dvc /app/.dvc
+#COPY go.sh /app/go.sh
 
 # Install any needed packages specified in requirements.txt
 RUN apt-get update && \

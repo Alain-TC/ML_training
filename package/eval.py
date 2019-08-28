@@ -23,7 +23,6 @@ if __name__ == '__main__':
     #target_test_prediction_df = pd.read_csv("{}/data/target_test_prediction_df.csv".format(main_path))
     preprocessing_pipe = make_pipeline(DataframeToMatrix())
 
-
     df_test = pd.read_csv("{}/data/learning_test.csv".format(main_path))
     target_test = df_test[['label']]
     features_test = df_test.drop('label', axis=1, inplace=False)
