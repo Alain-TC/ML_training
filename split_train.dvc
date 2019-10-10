@@ -6,12 +6,12 @@ outs:
 - cache: true
   metric: false
   persist: false
-  md5: 653a8dd57ef83a6e6f075ce18ee7fb8d
+  md5: fc06e1dc666804dd0e17ba41d856a0fd
   path: data/learning_train.csv
 - cache: true
   metric: false
   persist: false
-  md5: ab893fa2529c3d3ed73a39edb6ebef2b
+  md5: e4093dc99ca251424039f2b4a01f8fbc
   path: data/learning_test.csv
-md5: c2e07fa9021cf126e4bb5393cb7ebf82
+md5: abd0a30b6a387815267e42ca6d6fdaca
 cmd: python data/split_train.py

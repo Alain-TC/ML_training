@@ -34,7 +34,7 @@ class CNN(BaseEstimator):
         self._compile_model()
         # 9. Fit model on training data
         self.model.fit(df, y,
-                  batch_size=32, nb_epoch=10, verbose=1)
+                  batch_size=32, nb_epoch=1, verbose=1)
 
     def predict(self, df):
         return self.model.predict(df)
