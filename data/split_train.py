@@ -3,7 +3,7 @@ import os
 cwd = os.getcwd()
 
 train = pd.read_csv("{}/data/train.csv".format(cwd))
-train = train.sample(frac=1)
+train = train.sample(frac=1, random_state=1)
 shape = int(train.shape[0] * 0.8)
 
 learning_train = train.iloc[:shape, :]
