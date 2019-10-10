@@ -3,12 +3,12 @@ deps:
 - path: data/test.csv
   md5: a35759d77c0a3dadb4d4253ff87ec430
 - path: model/finalized_model.sav
-  md5: a3a056f87814a21301413b54b5d7c31a
-md5: b544449b566538242d13d7f2d90a96c8
+  md5: c6f65d57b644fff3359e64cfa0bdfd97
+md5: 7b558f5b319bb41af1a6ad8ac377265e
 outs:
 - path: data/test_prediction.csv
   metric: false
   cache: true
   persist: false
-  md5: 1f833f0bdf010051dbfbb68e85812fc7
+  md5: ef613ea329913aa52f9220f604b08d9b
 cmd: python package/kaggle_prediction.py
