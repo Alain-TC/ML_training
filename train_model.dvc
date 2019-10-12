@@ -1,21 +1,19 @@
-md5: 8edec7b7b35d17a40fb71790bbdf04f4
-outs:
-- path: model/finalized_model.sav
-  metric: false
-  md5: e07b5c017315cf6f3ac6526a44057a25
-  cache: true
-  persist: false
-- path: data/train_performances.json
-  metric: false
-  md5: 95872380df1e1f33bddf333fcf5e9637
-  cache: true
-  persist: false
-deps:
-- path: package
-  md5: bdcd30a1113243345aed1492956b0e16.dir
-- path: data/learning_test.csv
-  md5: 4355ec1e6d074142060b98e81477ecf8
-- path: data/learning_train.csv
-  md5: 2d43cf4a75ef28551fdda26d612aaa4a
+md5: 8f81a947c05c3264d9a1f56f44f675eb
 cmd: python package/main.py
 wdir: .
+deps:
+- md5: 2d43cf4a75ef28551fdda26d612aaa4a
+  path: data/learning_train.csv
+- md5: d4b6bae4318a57ce6a85dff0478cd395
+  path: package/main.py
+outs:
+- md5: 5765b7aff81b096bab3cdab845b7f57c
+  path: model/finalized_model.sav
+  cache: true
+  metric: false
+  persist: false
+- md5: 903ed526c2f0b4fb05a6106f26b37ae7
+  path: data/train_performances.json
+  cache: true
+  metric: false
+  persist: false
