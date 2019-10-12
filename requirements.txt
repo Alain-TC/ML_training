@@ -12,6 +12,7 @@ decorator==4.4.0
 distro==1.4.0
 dulwich==0.19.13
 dvc==0.40.0
+dvc[all]
 future==0.18.0
 gast==0.2.2
 gitdb2==2.0.6
