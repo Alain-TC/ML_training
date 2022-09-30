@@ -24,7 +24,7 @@ h5py==2.10.0
 humanize==0.5.1
 idna==2.8
 inflect==2.1.0
-joblib==0.14.0
+joblib==1.2.0
 jsonpath-ng==1.4.3
 Keras==2.3.1
 Keras-Applications==1.0.8
